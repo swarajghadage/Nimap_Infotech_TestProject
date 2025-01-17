@@ -16,7 +16,6 @@ public class ProductNotFoundException extends Exception {
 
 	private String message;
 	
-	
 	private HttpStatus status;
 	
 }

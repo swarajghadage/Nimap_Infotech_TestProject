@@ -23,17 +23,19 @@ public class Product {
 	
 	    @Id
 	    @GeneratedValue(strategy = GenerationType.AUTO)
-	    private Integer id;
+	    private int id;
 
 	    @Column(nullable = false)
 	    private String name;
 
 	    private String description;
+	    
+	    private int quantity;
 
 	    private Double price;
 
 	    @ManyToOne
-	    @JoinColumn(name = "category_id", nullable = false)
+	    @JoinColumn(name = "category_id")
 	    private Category category;
 
 }

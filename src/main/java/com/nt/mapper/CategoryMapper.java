@@ -10,7 +10,7 @@ public class CategoryMapper {
 
 	public Category toEntity(CategoryRequestDTO dto) {
 
-		return new Category(dto.getId(), dto.getName(),dto.getDescription(), null);
+		return new Category(dto.getId(), dto.getName(),dto.getDescription());
 	}
 
 }
